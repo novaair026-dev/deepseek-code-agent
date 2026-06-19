@@ -1,0 +1,33 @@
+[package]
+name = "deepseek-code-agent"
+version = "0.1.0"
+description = "DeepSeek Code Agent - 让没有编程经验的用户也能开发应用"
+authors = ["DeepSeek Code Agent"]
+edition = "2021"
+rust-version = "1.77.2"
+
+[lib]
+name = "deepseek_code_agent_lib"
+crate-type = ["lib", "cdylib", "staticlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.2.0", features = [] }
+
+[dependencies]
+tauri = { version = "2.5.1", features = [] }
+tauri-plugin-opener = "2.2.6"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.43.0", features = ["full"] }
+reqwest = { version = "0.12.15", features = ["json", "stream"] }
+reqwest-eventsource = "0.6.0"
+rusqlite = { version = "0.34.0", features = ["bundled", "chrono", "uuid"] }
+futures = "0.3.31"
+keyring = { version = "3.6.2", features = ["apple-native", "windows-native", "sync-secret-service"] }
+chrono = { version = "0.4.41", features = ["serde"] }
+uuid = { version = "1.16.0", features = ["v4", "serde"] }
+thiserror = "2.0.12"
+anyhow = "1.0.98"
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.19", features = ["env-filter"] }
+directories = "6.0.0"

@@ -6,7 +6,7 @@ use super::types::{AgentContext, AgentResponse, DevelopmentPlan};
 fn planning_prompt(project_type: ProjectType) -> String {
     let tech_stack = match project_type {
         ProjectType::Desktop => "Rust + Tauri v2 + React + TypeScript + Tailwind CSS + SQLite",
-        ProjectType::Website => "Rust + Tauri v2（桌面管理端）+ Axum（Web 后端）+ React/TypeScript/Tailwind（前端）+ SQLite",
+        ProjectType::Website => "Rust + Tauri v2（桌面管理端）+ Axum（Web 后端）+ Vue3/Vite（前端）+ SQLite",
     };
 
     format!(

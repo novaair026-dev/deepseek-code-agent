@@ -18,8 +18,9 @@ DeepSeek Code Agent 是一款面向非技术用户的智能编程助手。通过
 - **命令自动执行**：低风险的构建/安装命令自动执行，高风险命令需人工二次确认。
 - **两种项目类型**：
   - 桌面应用：`Rust + Tauri + SQLite`
-  - 网站：`Rust + Tauri（管理端）+ Axum（Web 后端）+ SQLite`
+  - 网站：`Rust + Tauri（管理端）+ Axum（Web 后端）+ Vue3 + SQLite`
 - **本地安全存储**：DeepSeek API Key 保存在系统钥匙串中，项目文件隔离在用户目录下。
+- **明暗主题切换**：支持亮色 / 暗色模式，自动跟随系统设置，也可手动切换。
 
 ---
 
@@ -28,8 +29,9 @@ DeepSeek Code Agent 是一款面向非技术用户的智能编程助手。通过
 | 层级 | 技术 |
 |------|------|
 | 桌面框架 | Tauri v2 |
-| 前端 | React 18 + TypeScript + Vite + Tailwind CSS |
-| 后端 | Rust |
+| 前端 | React 18 + TypeScript + Vite + Tailwind CSS（Agent 自身 UI） |
+| 网站前端 | Vue3 + Vite |
+| 后端 | Rust（Axum） |
 | 数据库 | SQLite |
 | 大模型 | DeepSeek API（`deepseek-v4-pro`） |
 

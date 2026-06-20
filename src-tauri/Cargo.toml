@@ -1,6 +1,6 @@
 [package]
 name = "deepseek-code-agent"
-version = "0.1.0"
+version = "0.0.1"
 description = "DeepSeek Code Agent - 让没有编程经验的用户也能开发应用"
 authors = ["DeepSeek Code Agent"]
 edition = "2021"

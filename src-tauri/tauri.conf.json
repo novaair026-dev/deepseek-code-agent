@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
   "productName": "DeepSeek Code Agent",
-  "version": "0.1.0",
-  "identifier": "com.deepseek-code-agent.app",
+  "version": "0.0.1",
+  "identifier": "com.deepseek-code-agent",
   "build": {
     "beforeDevCommand": "npx vite",
     "beforeBuildCommand": "npx tsc && npx vite build",
